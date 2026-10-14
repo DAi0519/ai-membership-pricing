@@ -4,7 +4,7 @@ HTML + CSS + JavaScript
 > L2 | 父级: ../CLAUDE.md
 
 成员清单
-index.html: 单文件三视图定价页面；方案表五行，源于 ../../01a1331e-e3dd-7a02-8a78-6664ff61c7b1/会员定价决策.html
+index.html: 单文件三视图定价页面；方案表五行，学长创意/准确/智能体分别展示；活动按真实次数包，源于 ../../01a1331e-e3dd-7a02-8a78-6664ff61c7b1/会员定价决策.html
 README.md: main 分支根目录的 GitHub Pages 发布说明
 .nojekyll: 禁用 Jekyll 转换，直接发布静态页面
 CLAUDE.md: 发布目录地图与维护约束
