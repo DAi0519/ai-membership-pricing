@@ -1,0 +1,346 @@
+{
+  "current": "2026-10-16-v24",
+  "versions": [
+    {
+      "id": "2026-10-14-v01",
+      "date": "2026-10-14",
+      "label": "双品牌白底对比素材",
+      "state": "frozen",
+      "coverage": "现存销售页面保留为单HTML；完整定价页原件此前未独立保存，不补造历史",
+      "files": {
+        "会员权益对比.html": "f5e40272768d4305cab41d2688f6cb11ddb88d9fe06706619ebed08e7991cf9e"
+      },
+      "format": "single-html-v1",
+      "entry": "会员权益对比.html",
+      "sourceHtmlSha256": "f5e40272768d4305cab41d2688f6cb11ddb88d9fe06706619ebed08e7991cf9e",
+      "embeddedResourceCount": 0,
+      "verifiedSourceFileCount": 3
+    },
+    {
+      "id": "2026-10-14-v02",
+      "date": "2026-10-14",
+      "label": "深色本方年度/月度购买页 · 37规格旧扣豆",
+      "state": "frozen",
+      "coverage": "原版主页面、数值和交互保留；本版图片及可点击子页已内嵌，仅留一份HTML",
+      "files": {
+        "会员定价决策.html": "2d20ff439c03e01d9621ab6ec588ad822d4952c6cbcb6914dc1e5a4b5e1e6cb1"
+      },
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "sourceHtmlSha256": "4373846a2cef0b9621bac291fa4e7082ec19527ffe272d3ce5cc05529e40aef4",
+      "embeddedResourceCount": 2,
+      "verifiedSourceFileCount": 26
+    },
+    {
+      "id": "2026-10-14-v03",
+      "date": "2026-10-14",
+      "label": "medium质量 · 满用低价扣豆 · 原截图横向对比",
+      "state": "frozen",
+      "coverage": "原版主页面、数值和交互保留；本版图片及可点击子页已内嵌，仅留一份HTML",
+      "files": {
+        "会员定价决策.html": "8d27581482ee0339fd1f9dd9fb6f0e53c96a86acab49e10d13c192ba69a91161"
+      },
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "sourceHtmlSha256": "cb78040b1ebce3c91d32e50139facae383bc0a7d58415e27033a23f1275a22bf",
+      "embeddedResourceCount": 4,
+      "verifiedSourceFileCount": 33
+    },
+    {
+      "id": "2026-10-14-v04",
+      "date": "2026-10-14",
+      "label": "50%常态动态测算 · 整数降豆 · 定价消耗合表",
+      "state": "frozen",
+      "coverage": "原版主页面、数值和交互保留；本版图片及可点击子页已内嵌，仅留一份HTML",
+      "files": {
+        "会员定价决策.html": "03672a7017f42d07e66723e1bd0244bda12715bc04b1f6df5de85d0bd0137089"
+      },
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "sourceHtmlSha256": "77b272854e42895810a4c2787fdf214531f86a7cb34325070f5b0cc3185621bb",
+      "embeddedResourceCount": 5,
+      "verifiedSourceFileCount": 40
+    },
+    {
+      "id": "2026-10-14-v05",
+      "date": "2026-10-14",
+      "label": "月卡满用正毛利 · 5豆粒度",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "82f19cd6e7c86d50d6306f298ed1e84751ca7c104a925aecda013a14616a6d77",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "598ebf9598d81a95175e4e1d3e1e9625f136b7032d1932e11dbb0701822e65b9"
+      }
+    },
+    {
+      "id": "2026-10-14-v06",
+      "date": "2026-10-14",
+      "label": "月卡满用10%目标 · 双向试算",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "873665779556708ae1f73638a07eb06c7c1aa1c15f6991a923520bb71b00817a",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "4195249c29eb5681deed221c668ef7772cbd90ab6f08061c824e44ee8c72a732"
+      }
+    },
+    {
+      "id": "2026-10-14-v07",
+      "date": "2026-10-14",
+      "label": "推广1440/720张 · 树林原图证据",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "096bba57ea7e35dfc0714cbdfcb9961b405fe48381f7829dccd391c25a37618d",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "83051681e9bb7e973556cd177cb28a799aa6edc8b68cf32751fc46afc82dc6ae"
+      }
+    },
+    {
+      "id": "2026-10-14-v08",
+      "date": "2026-10-14",
+      "label": "精简权益 · 原消耗表 · 月年毛利同表",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "61cd23b059cfe2c42af4096d0290689703f4f7642a16358f11ec9060ea60ecea",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "327aa568e8a927c904a2107bf2bf96b240fde8343dd577050d54a0770d7f0af5"
+      }
+    },
+    {
+      "id": "2026-10-14-v09",
+      "date": "2026-10-14",
+      "label": "目标试算跟随年/月卡与消耗率 · 报价基线不改",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "040254b45ad12579b2c10e486906d466b5af0d5460212f037e7c052b54a7110b",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "cc4a05e46c2d14c1f7b84de223d3c60da9a9c130150c5ba6a0755cd1e40365eb"
+      }
+    },
+    {
+      "id": "2026-10-15-v10",
+      "date": "2026-10-15",
+      "label": "精简说明 · 算法与数据折叠 · 默认月卡满用 · 核豆下方购买",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "efad5e30965d67fbf7a7459cf320042f92297aaae90c1fa97308f72ce8f96569",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "0031c37626bcb65f7dfdc8eb53548f4e5a37095f693976754401e839620347e1"
+      }
+    },
+    {
+      "id": "2026-10-15-v11",
+      "date": "2026-10-15",
+      "label": "仅增模型核豆/消耗率与毛利联动折线图",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "457416184121e84b1f4ebc307fffdd2b5d0ccc23cd5c0427de73ec5b8871a367",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "35028e09835a5a1915fa6bf028df9aed58459a32f0e45478e84c32332c72fe58"
+      }
+    },
+    {
+      "id": "2026-10-15-v12",
+      "date": "2026-10-15",
+      "label": "全模型双图联动 · 悬停十字线 · 图表移至试算表后",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "138b6ebe7ece661f81983ec5fc7b996f2bc692c035556f7454b9e93a3cab7a49",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "b8fb7628bb7d61e0af344c475deefa4f648b47ae5e0dc4bdb91e09c1db61f47e"
+      }
+    },
+    {
+      "id": "2026-10-15-v13",
+      "date": "2026-10-15",
+      "label": "会员卡精简 · 去3D建模 · 普通模型或GPT2.5 · 注释归公共区",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "367a84d725edd5032a1b0e22488d646dba87a23357f64461533bf9ae3aa04adc",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "67d6854521e82ce194fa21669a93926efd44e2eea90c9b64f1a587c1fa303f16"
+      }
+    },
+    {
+      "id": "2026-10-15-v14",
+      "date": "2026-10-15",
+      "label": "移除定价毛利双图 · 保留原试算表与会员卡",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "91fff1acc43817b5de459f4182b50535b51a66555215c45bec1714810bd035da",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "aef41d09ca34610a5df4eff4dc5696f2fc9edd2894ec978b1559048cf7571620"
+      }
+    },
+    {
+      "id": "2026-10-15-v15",
+      "date": "2026-10-15",
+      "label": "仅调整表格排序 · 同名模型相邻与分辨率升序",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "685057c3048804c7ea745b69de3aeea643148faedbac7d51c9df47775170bc5d",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "fbc69bf5f31d206f6767903bfc0d3aac3a6f57cf0b983d8e2c569992e8da3da3"
+      }
+    },
+    {
+      "id": "2026-10-15-v16",
+      "date": "2026-10-15",
+      "label": "会议定稿 · 4个已上线模型固定核豆 · 年卡499限时398",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "a7366a0c4f01dd49a5ee479f2a7b3793e2069f7f10a09ba2a2da3c3e5a7c0e74",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "2224e3271e8801ce5bcb338c1ef8d9f819479a5e7098c40669960ea6b9c88e01"
+      }
+    },
+    {
+      "id": "2026-10-15-v17",
+      "date": "2026-10-15",
+      "label": "宣传名称统一为KooVision1.0 · 其余会议方案不变",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "ff51caa5ceacad747e3ccbe3181e172b731088bf25d949ce4c2abf400c2c30ca",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "e67e21a2ab4dc31033eb383ddbdebd88e59aca42ec190b482c648414c7c1b93f"
+      }
+    },
+    {
+      "id": "2026-10-15-v18",
+      "date": "2026-10-15",
+      "label": "补算8项待上线参考 · Seedream线上1K/2K同60豆",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "52e7d709d827b5cc3d60ecdce7f8cf685da3044955d03eb5904507e77c69a09c",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "34402dccf1df6d9dfe4446912d1f4758bbd5fc33045b879dfa638f15b4793aa1"
+      }
+    },
+    {
+      "id": "2026-10-15-v19",
+      "date": "2026-10-15",
+      "label": "移除GPT2.5三规格 · 其余线上与待上线定价保持",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "95f051c339da98b626006ec94e347d256b5300107c37fbb96f2027af975acf7f",
+      "embeddedResourceCount": 3,
+      "files": {
+        "会员定价决策.html": "1f7f406d7650cee2f9af17fc4f86624e09584c811669c0804b5de72e7099325a"
+      }
+    },
+    {
+      "id": "2026-10-15-v20",
+      "date": "2026-10-15",
+      "label": "待上线按1K毛利向上20豆取整 · 建学币增购对比 · 移除旧测算",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "b8bceeaebe5fa3d5dad705cacbd71735c4e1e294e6416ed0b438c7ca0181cea8",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "80d6c28b67f0cbd508b50ca2ea3f220305ccf49c384510a92f3ad6723b62948b"
+      }
+    },
+    {
+      "id": "2026-10-15-v21",
+      "date": "2026-10-15",
+      "label": "KooVision百张折算价 · 其余V20保持",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "411b8a6bf8869eb9d2c74461d1ed1793352308bb02737b7254f83496c7c6a8fe",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "246f00f7ef4f8515d25b77d3c1f02b47fc242c1d5301b74990fe94a2ce25044f"
+      }
+    },
+    {
+      "id": "2026-10-15-v22",
+      "date": "2026-10-15",
+      "label": "百张价移至核豆下 · 额度估算注释 · 默认随基线毛利",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "0bb5c2e768ca3810aeb6538e29eb55b8aaae98465da4e815ab2da4af11e06de4",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "69e21be1457a359ba47b448136586c5d17725776aad7c08bf6d608de4372eca4"
+      }
+    },
+    {
+      "id": "2026-10-16-v23",
+      "date": "2026-10-16",
+      "label": "仅更新会员权益对比话术 · 用户指定文案",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "f5225e28833515cde731a789ef47b4a2bea4582c7fd378d72e0e66bdcfebbc7f",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "e0a1bb1d90e811bf7f4c4fb31895850f074a240789ae2505bc879d68a45dbd92"
+      }
+    },
+    {
+      "id": "2026-10-16-v24",
+      "date": "2026-10-16",
+      "label": "KooVision1.0（Flux）2K10豆 · 4K20豆估算",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "c6dd6de6ded141a9746f867a58594c617156e821183ff5441f7d88fed507240a",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "b705ea94aa8235cafb165efb7b436574feb8b905f623bcf876937d15f4536f44"
+      }
+    }
+  ],
+  "format": "single-html-v1"
+}

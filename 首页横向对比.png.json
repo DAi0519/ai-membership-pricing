@@ -1,0 +1,30 @@
+{
+  "version": "2026-10-16-v24",
+  "prompt": "ORIGIN: Browser screenshot of authored Kujiale membership cards with KooVision1.0（Flux） 2K 720 images/month or Seedream 5 Pro 120 images/month beside unedited Jianzhuxuezhang user-provided original screenshot 14. Annual 398 / original 499, monthly 59, 7200 beans and 4.61 / 8.19 yuan per 100 images are retained. The 2K起 small label belongs only to KooVision1.0（Flux）. V23 lead remains user-directed verbatim copy, not evidence verification of all-model superiority. CPU Chromium 1800px viewport, deviceScaleFactor 2, home-comparison element crop; not AI generated or a redrawn competitor.",
+  "source": "首页横向对比.html",
+  "sourceSha256": "9bf6e3be39da6f8ceae9c26424bfa440448cc04f619a7246d59a422d5b4d5abe",
+  "rivalSha256": "c7e5082a4e95a7e17e13041ccdfd497ad9e5dfe14f4c954c3b69c1476cf6b7fc",
+  "salesImageSha256": "8611c29f0d86449f3545a5e53ce40ab72d8bf49fd1d6862465554cfb2a8afe16",
+  "width": 3480,
+  "height": 1916,
+  "capture": {
+    "engine": "Chromium",
+    "browserVersion": "155.0.8059.80",
+    "headless": true,
+    "args": [
+      "--disable-gpu"
+    ],
+    "viewport": {
+      "width": 1800,
+      "height": 1150
+    },
+    "deviceScaleFactor": 2,
+    "selector": "#home-comparison",
+    "method": "Playwright locator.screenshot",
+    "provenance": "browser screenshot",
+    "generatedByAI": false,
+    "imageBeforeProvenanceSha256": "0b8e0a05ef7f1aa3283405fcb2970c290829326bf393d7cfb9d1c2e797bcf05e"
+  },
+  "imageSha256": "f8dda98d383c965694dbfe71319df7126eaecbd53d7a3894fbb77e4b7ab00713",
+  "provenanceEmbedded": true
+}

@@ -1,0 +1,28 @@
+{
+  "version": "2026-10-16-v24",
+  "prompt": "ORIGIN: Browser screenshot of authored Kujiale AI PRO cards. Annual limited-time 398 yuan with 499 yuan strikethrough, monthly 59 yuan and shared 7200 beans. KooVision1.0（Flux） alone has a small 2K起 label, with 720 images/month or 120 Seedream 5 Pro images/month. KooVision1.0（Flux） 2K per-100-image fee apportionment is 4.61 yuan annually / 8.19 yuan monthly below the beans and before each CTA. Both allowances end with the exact single-model estimate note. Flux 4K is excluded from sales. CPU Chromium 1200px viewport, deviceScaleFactor 2, membership-art element crop; not AI generated.",
+  "source": "AI会员购买页.html",
+  "sourceSha256": "3deb54ab76875190a5cdfabf868d9238de321204eb7484443f239c8c6fdd6d76",
+  "width": 2400,
+  "height": 2274,
+  "capture": {
+    "engine": "Chromium",
+    "browserVersion": "155.0.8059.80",
+    "headless": true,
+    "args": [
+      "--disable-gpu"
+    ],
+    "viewport": {
+      "width": 1200,
+      "height": 1100
+    },
+    "deviceScaleFactor": 2,
+    "selector": "#membership-art",
+    "method": "Playwright locator.screenshot",
+    "provenance": "browser screenshot",
+    "generatedByAI": false,
+    "imageBeforeProvenanceSha256": "414197eda5bf1cf73f4a4eabf8e5f9d25eddebce82a973be1a3017cbfc205b0c"
+  },
+  "imageSha256": "8611c29f0d86449f3545a5e53ce40ab72d8bf49fd1d6862465554cfb2a8afe16",
+  "provenanceEmbedded": true
+}

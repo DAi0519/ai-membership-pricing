@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 会员定价测算报告</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background:#f4f5f8; color:#1a1a2e; padding:32px 24px; line-height:1.65; font-size:14px; }
+  .container { max-width:1180px; margin:0 auto; }
+  .report-header { background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%); color:white; border-radius:14px; padding:34px 40px; margin-bottom:24px; }
+  .report-header h1 { font-size:24px; font-weight:700; margin-bottom:6px; letter-spacing:.5px; }
+  .report-header .sub { font-size:13px; color:rgba(255,255,255,.72); margin-top:4px; }
+  .kpi-bar { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px; }
+  @media (max-width:980px){ .kpi-bar{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:620px){ .kpi-bar{grid-template-columns:1fr;} }
+  .kpi-card { background:white; border-radius:10px; padding:18px 20px; box-shadow:0 1px 4px rgba(0,0,0,.06); border-top:3px solid #3b82f6; }
+  .kpi-card.green{border-color:#22c55e;} .kpi-card.orange{border-color:#f97316;} .kpi-card.purple{border-color:#8b5cf6;}
+  .kpi-value { font-size:24px; font-weight:750; margin:4px 0 2px; line-height:1.25; color:#0f172a; }
+  .kpi-value.blue{color:#2563eb;} .kpi-value.green{color:#16a34a;} .kpi-value.orange{color:#ea580c;} .kpi-value.purple{color:#7c3aed;}
+  .kpi-label { font-size:12px; color:#888; }
+  .section { background:white; border-radius:12px; padding:28px 32px; margin-bottom:22px; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+  .section-title { font-size:16px; font-weight:700; color:#0f172a; margin-bottom:18px; padding-bottom:12px; border-bottom:2px solid #f0f0f5; display:flex; align-items:center; gap:8px; }
+  .section-title .q { background:#1e3a5f; color:white; border-radius:6px; padding:2px 10px; font-size:12px; }
+  .subsec { font-size:13px; font-weight:700; color:#444; margin:20px 0 10px; padding-left:10px; border-left:3px solid #3b82f6; }
+  .answer-banner { background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:16px 20px; margin-bottom:18px; font-size:13.5px; line-height:1.8; color:#1e40af; }
+  .answer-banner strong { color:#1e3a8a; }
+  .tbl-wrap { overflow-x:auto; margin-bottom:10px; }
+  table { border-collapse:collapse; width:100%; font-size:12.5px; min-width:760px; }
+  table.wide { min-width:980px; }
+  table.xwide { min-width:1120px; }
+  th { background:#f1f5f9; color:#475569; font-weight:600; padding:9px 11px; text-align:center; border:1px solid #e2e8f0; white-space:nowrap; }
+  td { padding:8px 11px; text-align:center; border:1px solid #e2e8f0; white-space:nowrap; }
+  tr:nth-child(even) td { background:#f8fafc; } tr:hover td { background:#eef2ff; }
+  td.lbl { text-align:left; font-weight:600; color:#334155; }
+  td.pos { color:#16a34a; font-weight:700; } td.neg { color:#dc2626; font-weight:700; } td.warn { color:#d97706; font-weight:700; } td.dim { color:#94a3b8; }
+  .row-hl td { background:#fef9c3 !important; } .row-hl-blue td { background:#e0f2fe !important; } .row-hl-red td { background:#fee2e2 !important; }
+  .alert { background:#fff7ed; border:1px solid #fed7aa; border-radius:8px; padding:12px 16px; font-size:12.5px; color:#7c3d12; margin:12px 0 0; line-height:1.8; }
+  .alert strong{color:#c2410c;}
+  .conclusion-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:16px; }
+  @media (max-width:900px){ .conclusion-grid{grid-template-columns:1fr;} }
+  .cbox { border-radius:8px; padding:16px 18px; border-left:4px solid; }
+  .cbox.blue{background:#eff6ff; border-color:#3b82f6;} .cbox.green{background:#f0fdf4; border-color:#22c55e;} .cbox.orange{background:#fff7ed; border-color:#f97316;}
+  .cbox h4 { font-size:13px; font-weight:700; margin-bottom:7px; color:#1e293b; }
+  .cbox p,.cbox li { font-size:12.5px; color:#475569; line-height:1.75; } .cbox ul{padding-left:16px;}
+  .price-main { font-size:24px; font-weight:800; color:#0f172a; margin-bottom:6px; }
+  .note-box { background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:16px 18px; font-size:12.5px; color:#475569; line-height:1.85; }
+  .note-box strong{color:#0f172a;}
+  footer { text-align:center; color:#aaa; font-size:11px; margin-top:24px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <h1>AI 会员定价测算报告</h1>
+    <div class="sub">本报告用于评估 AI 会员在每月发放 7200 核豆时的成本、毛利与推荐定价。</div>
+  </header>
+
+  <section class="kpi-bar">
+    <div class="kpi-card"><div class="kpi-label">每月权益</div><div class="kpi-value blue">7200 核豆</div></div>
+    <div class="kpi-card green"><div class="kpi-label">月卡价格锚点</div><div class="kpi-value green">72 元/月<br><span style="font-size:15px;">首月 45 元</span></div></div>
+    <div class="kpi-card purple"><div class="kpi-label">连续包月主推</div><div class="kpi-value purple">60 元/月<br><span style="font-size:15px;">首月 40 元</span></div></div>
+    <div class="kpi-card orange"><div class="kpi-label">年卡主推</div><div class="kpi-value orange">599 元/年<br><span style="font-size:15px;">首年 499 元</span></div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><span class="q">01</span>7200 核豆/月：不同自研与套壳占比的成本</div>
+    <div class="answer-banner"><strong>核心结论：</strong>7200 核豆对应用户侧面值 72 元/月；套壳/高算力成本率按 60% 测算，若 100% 自研使用，月成本 14.40 元；若 100% 套壳/高算力使用，月成本 43.20 元。</div>
+    <div class="tbl-wrap"><table><thead><tr><th>使用结构</th><th>自研占比</th><th>套壳占比</th><th>月成本</th><th>年成本</th><th>风险判断</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td>100%</td><td>0%</td><td>¥14.40</td><td>¥172.80</td><td class="pos">低成本</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td>95%</td><td>5%</td><td>¥15.84</td><td>¥190.08</td><td class="pos">安全</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td>80%</td><td>20%</td><td>¥20.16</td><td>¥241.92</td><td class="pos">推荐主假设</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td>50%</td><td>50%</td><td>¥28.80</td><td>¥345.60</td><td class="warn">压力场景</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td>20%</td><td>80%</td><td>¥37.44</td><td>¥449.28</td><td class="warn">高压场景</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td>0%</td><td>100%</td><td>¥43.20</td><td>¥518.40</td><td class="neg">极端风险</td></tr>
+    </tbody></table></div>
+
+    <div class="subsec">1.1 月度核豆消耗率折算后的实际成本</div>
+    <div class="answer-banner"><strong>说明：</strong>AI 会员核豆月度过期，未消耗核豆不产生 AI 调用成本。若用户当月仅消耗 50%/80%/100% 核豆，则实际成本按已消耗核豆等比例折算。</div>
+    <div class="tbl-wrap"><table><thead><tr><th>使用结构</th><th>50% 消耗率<br>3600 核豆</th><th>80% 消耗率<br>5760 核豆</th><th>100% 消耗率<br>7200 核豆</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td>¥7.20</td><td>¥11.52</td><td>¥14.40</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td>¥7.92</td><td>¥12.67</td><td>¥15.84</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td>¥10.08</td><td>¥16.13</td><td>¥20.16</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td>¥14.40</td><td>¥23.04</td><td>¥28.80</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td>¥18.72</td><td>¥29.95</td><td>¥37.44</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td>¥21.60</td><td>¥34.56</td><td>¥43.20</td></tr>
+    </tbody></table></div>
+
+    <div class="subsec">1.2 年度核豆消耗率折算后的实际成本</div>
+    <div class="tbl-wrap"><table><thead><tr><th>使用结构</th><th>50% 消耗年成本</th><th>80% 消耗年成本</th><th>100% 消耗年成本</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td>¥86.40</td><td>¥138.24</td><td>¥172.80</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td>¥95.04</td><td>¥152.06</td><td>¥190.08</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td>¥120.96</td><td>¥193.54</td><td>¥241.92</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td>¥172.80</td><td>¥276.48</td><td>¥345.60</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td>¥224.64</td><td>¥359.42</td><td>¥449.28</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td>¥259.20</td><td>¥414.72</td><td>¥518.40</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><span class="q">02</span>月卡与连续包月成本毛利测算</div>
+    <div class="answer-banner"><strong>核心结论：</strong>月卡 72 元用于形成价格锚点；连续包月 60 元作为主推成交价。60 元连续包月在 50% 自研 + 50% 套壳满额消耗下毛利约 52.0%，在 100% 套壳满额消耗下毛利约 28.0%。</div>
+    <div class="subsec">2.1 满额核豆消耗下的价格方案毛利率</div>
+    <div class="tbl-wrap"><table class="xwide"><thead><tr><th rowspan="2">使用结构</th><th rowspan="2">满额月成本</th><th colspan="2">月卡</th><th colspan="2">月卡首月</th><th colspan="2">连续包月</th><th colspan="2">连续包月首月</th></tr><tr><th>价格</th><th>毛利率</th><th>价格</th><th>毛利率</th><th>价格</th><th>毛利率</th><th>价格</th><th>毛利率</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td>¥14.40</td><td>¥72.00</td><td class="pos">80.0%</td><td>¥45.00</td><td class="pos">68.0%</td><td>¥60.00</td><td class="pos">76.0%</td><td>¥40.00</td><td class="pos">64.0%</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td>¥15.84</td><td>¥72.00</td><td class="pos">78.0%</td><td>¥45.00</td><td class="pos">64.8%</td><td>¥60.00</td><td class="pos">73.6%</td><td>¥40.00</td><td class="pos">60.4%</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td>¥20.16</td><td>¥72.00</td><td class="pos">72.0%</td><td>¥45.00</td><td class="pos">55.2%</td><td>¥60.00</td><td class="pos">66.4%</td><td>¥40.00</td><td class="pos">49.6%</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td>¥28.80</td><td>¥72.00</td><td class="pos">60.0%</td><td>¥45.00</td><td class="pos">36.0%</td><td>¥60.00</td><td class="pos">52.0%</td><td>¥40.00</td><td class="warn">28.0%</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td>¥37.44</td><td>¥72.00</td><td class="pos">48.0%</td><td>¥45.00</td><td class="warn">16.8%</td><td>¥60.00</td><td class="pos">37.6%</td><td>¥40.00</td><td class="warn">6.4%</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td>¥43.20</td><td>¥72.00</td><td class="pos">40.0%</td><td>¥45.00</td><td class="warn">4.0%</td><td>¥60.00</td><td class="warn">28.0%</td><td>¥40.00</td><td class="neg">-8.0%</td></tr>
+    </tbody></table></div>
+
+    <div class="subsec">2.2 月卡 72 元 / 首月 45 元：不同核豆消耗率下的毛利率</div>
+    <div class="tbl-wrap"><table class="wide"><thead><tr><th rowspan="2">使用结构</th><th colspan="3">72 元月卡</th><th colspan="3">45 元首月</th></tr><tr><th>50% 消耗率</th><th>80% 消耗率</th><th>100% 消耗率</th><th>50% 消耗率</th><th>80% 消耗率</th><th>100% 消耗率</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td class="pos">90.0%</td><td class="pos">84.0%</td><td class="pos">80.0%</td><td class="pos">84.0%</td><td class="pos">74.4%</td><td class="pos">68.0%</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td class="pos">89.0%</td><td class="pos">82.4%</td><td class="pos">78.0%</td><td class="pos">82.4%</td><td class="pos">71.8%</td><td class="pos">64.8%</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td class="pos">86.0%</td><td class="pos">77.6%</td><td class="pos">72.0%</td><td class="pos">77.6%</td><td class="pos">64.2%</td><td class="pos">55.2%</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td class="pos">80.0%</td><td class="pos">68.0%</td><td class="pos">60.0%</td><td class="pos">68.0%</td><td class="pos">48.8%</td><td class="pos">36.0%</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td class="pos">74.0%</td><td class="pos">58.4%</td><td class="pos">48.0%</td><td class="pos">58.4%</td><td class="pos">33.4%</td><td class="warn">16.8%</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td class="pos">70.0%</td><td class="pos">52.0%</td><td class="pos">40.0%</td><td class="pos">52.0%</td><td class="warn">23.2%</td><td class="warn">4.0%</td></tr>
+    </tbody></table></div>
+
+    <div class="subsec">2.3 连续包月 60 元 / 首月 40 元：不同核豆消耗率下的毛利率</div>
+    <div class="tbl-wrap"><table class="wide"><thead><tr><th rowspan="2">使用结构</th><th colspan="3">60 元连续包月</th><th colspan="3">40 元首月</th></tr><tr><th>50% 消耗率</th><th>80% 消耗率</th><th>100% 消耗率</th><th>50% 消耗率</th><th>80% 消耗率</th><th>100% 消耗率</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td class="pos">88.0%</td><td class="pos">80.8%</td><td class="pos">76.0%</td><td class="pos">82.0%</td><td class="pos">71.2%</td><td class="pos">64.0%</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td class="pos">86.8%</td><td class="pos">78.9%</td><td class="pos">73.6%</td><td class="pos">80.2%</td><td class="pos">68.3%</td><td class="pos">60.4%</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td class="pos">83.2%</td><td class="pos">73.1%</td><td class="pos">66.4%</td><td class="pos">74.8%</td><td class="pos">59.7%</td><td class="pos">49.6%</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td class="pos">76.0%</td><td class="pos">61.6%</td><td class="pos">52.0%</td><td class="pos">64.0%</td><td class="pos">42.4%</td><td class="warn">28.0%</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td class="pos">68.8%</td><td class="pos">50.1%</td><td class="pos">37.6%</td><td class="pos">53.2%</td><td class="warn">25.1%</td><td class="warn">6.4%</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td class="pos">64.0%</td><td class="pos">42.4%</td><td class="warn">28.0%</td><td class="pos">46.0%</td><td class="warn">13.6%</td><td class="neg">-8.0%</td></tr>
+    </tbody></table></div>
+    <div class="alert"><strong>首月价风险：</strong>40 元连续包月首月在 20% 自研 + 80% 套壳满额消耗时毛利约 6.4%，在 100% 套壳满额消耗时毛利约 -8.0%；建议首月优惠重点用于拉新，并对高算力能力做用量监控。</div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><span class="q">03</span>年卡成本与毛利测算</div>
+    <div class="answer-banner"><strong>核心结论：</strong>年卡建议定价为 599 元/年，首次购买 499 元/年。599 元年卡在 50% 自研 + 50% 套壳满额消耗下毛利约 42.3%；首次 499 元在同场景下毛利约 30.7%。</div>
+
+    <div class="subsec">3.2.1 50% 核豆消耗率：10%~60% 毛利率定价</div>
+    <div class="tbl-wrap"><table class="wide"><thead><tr><th>使用结构</th><th>50%消耗年成本</th><th>10%毛利定价</th><th>20%毛利定价</th><th>30%毛利定价</th><th>40%毛利定价</th><th>50%毛利定价</th><th>60%毛利定价</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td>¥86.40</td><td>¥96.00</td><td>¥108.00</td><td>¥123.43</td><td>¥144.00</td><td>¥172.80</td><td>¥216.00</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td>¥95.04</td><td>¥105.60</td><td>¥118.80</td><td>¥135.77</td><td>¥158.40</td><td>¥190.08</td><td>¥237.60</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td>¥120.96</td><td>¥134.40</td><td>¥151.20</td><td>¥172.80</td><td>¥201.60</td><td>¥241.92</td><td>¥302.40</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td>¥172.80</td><td>¥192.00</td><td>¥216.00</td><td>¥246.86</td><td>¥288.00</td><td>¥345.60</td><td>¥432.00</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td>¥224.64</td><td>¥249.60</td><td>¥280.80</td><td>¥320.91</td><td>¥374.40</td><td>¥449.28</td><td>¥561.60</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td>¥259.20</td><td>¥288.00</td><td>¥324.00</td><td>¥370.29</td><td>¥432.00</td><td class="warn">¥518.40</td><td>¥648.00</td></tr>
+    </tbody></table></div>
+
+    <div class="subsec">3.2.2 80% 核豆消耗率：10%~60% 毛利率定价</div>
+    <div class="tbl-wrap"><table class="wide"><thead><tr><th>使用结构</th><th>80%消耗年成本</th><th>10%毛利定价</th><th>20%毛利定价</th><th>30%毛利定价</th><th>40%毛利定价</th><th>50%毛利定价</th><th>60%毛利定价</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td>¥138.24</td><td>¥153.60</td><td>¥172.80</td><td>¥197.49</td><td>¥230.40</td><td>¥276.48</td><td>¥345.60</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td>¥152.06</td><td>¥168.96</td><td>¥190.08</td><td>¥217.23</td><td>¥253.44</td><td>¥304.13</td><td>¥380.16</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td>¥193.54</td><td>¥215.04</td><td>¥241.92</td><td>¥276.48</td><td>¥322.56</td><td>¥387.07</td><td>¥483.84</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td>¥276.48</td><td>¥307.20</td><td>¥345.60</td><td>¥394.97</td><td>¥460.80</td><td class="warn">¥552.96</td><td>¥691.20</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td>¥359.42</td><td>¥399.36</td><td>¥449.28</td><td class="warn">¥513.46</td><td class="warn">¥599.04</td><td>¥718.85</td><td>¥898.56</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td>¥414.72</td><td>¥460.80</td><td>¥518.40</td><td class="warn">¥592.46</td><td>¥691.20</td><td>¥829.44</td><td>¥1036.80</td></tr>
+    </tbody></table></div>
+
+    <div class="subsec">3.2.3 100% 核豆消耗率：10%~60% 毛利率定价</div>
+    <div class="tbl-wrap"><table class="wide"><thead><tr><th>使用结构</th><th>100%消耗年成本</th><th>10%毛利定价</th><th>20%毛利定价</th><th>30%毛利定价</th><th>40%毛利定价</th><th>50%毛利定价</th><th>60%毛利定价</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td>¥172.80</td><td>¥192.00</td><td>¥216.00</td><td>¥246.86</td><td>¥288.00</td><td>¥345.60</td><td>¥432.00</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td>¥190.08</td><td>¥211.20</td><td>¥237.60</td><td>¥271.54</td><td>¥316.80</td><td>¥380.16</td><td>¥475.20</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td>¥241.92</td><td>¥268.80</td><td>¥302.40</td><td>¥345.60</td><td>¥403.20</td><td class="warn">¥483.84</td><td>¥604.80</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td>¥345.60</td><td>¥384.00</td><td>¥432.00</td><td class="warn">¥493.71</td><td class="warn">¥576.00</td><td>¥691.20</td><td>¥864.00</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td>¥449.28</td><td>¥499.20</td><td>¥561.60</td><td>¥641.83</td><td>¥748.80</td><td>¥898.56</td><td>¥1123.20</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td>¥518.40</td><td>¥576.00</td><td>¥648.00</td><td>¥740.57</td><td>¥864.00</td><td>¥1036.80</td><td>¥1296.00</td></tr>
+    </tbody></table></div>
+
+    <div class="subsec">3.3 年卡 599 元 / 首年 499 元：不同消耗率下的实际毛利率</div>
+    <div class="tbl-wrap"><table class="wide"><thead><tr><th rowspan="2">使用结构</th><th colspan="3">599 元年卡</th><th colspan="3">499 元首年</th><th rowspan="2">经营判断</th></tr><tr><th>50% 消耗率</th><th>80% 消耗率</th><th>100% 消耗率</th><th>50% 消耗率</th><th>80% 消耗率</th><th>100% 消耗率</th></tr></thead><tbody>
+      <tr><td class="lbl">100% 自研</td><td class="pos">85.6%</td><td class="pos">76.9%</td><td class="pos">71.2%</td><td class="pos">82.7%</td><td class="pos">72.3%</td><td class="pos">65.4%</td><td class="pos">高毛利</td></tr>
+      <tr><td class="lbl">95% 自研 + 5% 套壳</td><td class="pos">84.1%</td><td class="pos">74.6%</td><td class="pos">68.3%</td><td class="pos">81.0%</td><td class="pos">69.5%</td><td class="pos">61.9%</td><td class="pos">高毛利</td></tr>
+      <tr class="row-hl-blue"><td class="lbl">80% 自研 + 20% 套壳</td><td class="pos">79.8%</td><td class="pos">67.7%</td><td class="pos">59.6%</td><td class="pos">75.8%</td><td class="pos">61.2%</td><td class="pos">51.5%</td><td class="pos">主假设安全</td></tr>
+      <tr><td class="lbl">50% 自研 + 50% 套壳</td><td class="pos">71.2%</td><td class="pos">53.8%</td><td class="pos">42.3%</td><td class="pos">65.4%</td><td class="pos">44.6%</td><td class="pos">30.7%</td><td class="pos">599 安全，499 保底</td></tr>
+      <tr><td class="lbl">20% 自研 + 80% 套壳</td><td class="pos">62.5%</td><td class="pos">40.0%</td><td class="warn">25.0%</td><td class="pos">55.0%</td><td class="warn">28.0%</td><td class="warn">10.0%</td><td class="warn">首次价毛利偏低</td></tr>
+      <tr class="row-hl-red"><td class="lbl">100% 套壳</td><td class="pos">56.7%</td><td class="pos">30.8%</td><td class="warn">13.5%</td><td class="pos">48.1%</td><td class="warn">16.9%</td><td class="neg">-3.9%</td><td class="neg">首次价亏损风险</td></tr>
+    </tbody></table></div>
+    <div class="alert"><strong>499 元首年定价约束：</strong>若希望首次年卡毛利不低于 30%，全年实际成本需控制在约 349.30 元以内。对应 100% 核豆消耗时，套壳/高算力占比建议控制在约 51% 以内；若进入 20% 自研 + 80% 套壳高压结构，499 元首年满额消耗毛利约 10.0%，需要重点监控。</div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><span class="q">04</span>最终推荐定价参考</div>
+    <div class="conclusion-grid">
+      <div class="cbox blue"><h4>月卡价格锚点</h4><div class="price-main">72 元/月</div><ul><li>首月 45 元，用于非连续订阅的价格锚点。</li><li>72 元等于 7200 核豆用户侧面值，便于解释权益价值。</li><li>100% 套壳满额消耗仍有 40.0% 毛利。</li></ul></div>
+      <div class="cbox green"><h4>连续包月主推</h4><div class="price-main">60 元/月</div><ul><li>首月 40 元，用于拉新转化。</li><li>50/50 压力场景满额消耗毛利约 52.0%。</li><li>100% 套壳满额消耗毛利约 28.0%，仍需监控高算力集中消耗。</li></ul></div>
+      <div class="cbox orange"><h4>年卡主推</h4><div class="price-main">599 元/年</div><ul><li>首次购买 499 元/年。</li><li>599 元在 50/50 满额消耗毛利约 42.3%。</li><li>499 元首年在 50/50 满额消耗毛利约 30.7%；100% 套壳满额消耗会亏损。</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><span class="q">注</span>测算注释</div>
+    <div class="note-box">
+      <strong>成本率口径：</strong>自研成本率 20%；套壳/高算力成本率 60%。<br>
+      <strong>核豆权益：</strong>每月 7200 核豆，按 1 核豆 = 0.01 元用户侧面值测算。<br>
+      <strong>核豆消耗率：</strong>AI 会员核豆月度过期，未消耗核豆不产生 AI 调用成本；实际成本 = 满额成本 × 核豆消耗率。<br>
+      <strong>收入口径：</strong>按售卖价格直接测算，以实际售卖价作为收入。<br>
+      <strong>毛利率：</strong>(收入 - 成本) ÷ 收入。<br>
+      <strong>目标定价：</strong>成本 ÷ (1 - 目标毛利率)。
+    </div>
+  </section>
+
+  <footer>AI 会员定价测算报告 · 生成日期：2026-08-04 · 本报告为经营测算口径，实际上线需按 SKU 消耗结构与核豆消耗率持续复盘。</footer>
+</div>
+</body>
+</html>

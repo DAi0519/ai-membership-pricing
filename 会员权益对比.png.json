@@ -1,0 +1,5 @@
+{
+  "prompt": "ORIGIN: Browser screenshot of locally authored membership comparison HTML; not an AI-generated image. Reference: user supplied competitor card 14. Source: pricing-cards.mjs + pricing-surface.css, built by build-pricing-html.mjs, rendered with Playwright Chromium at 1200px viewport and deviceScaleFactor 2, cropped to #comparison-art. Captured 2026-10-14.",
+  "source": "会员权益对比.html",
+  "sourceSha256": "f5e40272768d4305cab41d2688f6cb11ddb88d9fe06706619ebed08e7991cf9e"
+}
