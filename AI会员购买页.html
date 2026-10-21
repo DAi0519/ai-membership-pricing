@@ -5,7 +5,7 @@
 [POS]: build-pricing-html.mjs生成，版本冻结后不覆盖。
 [PROTOCOL]: 变更时更新此头部，然后检查 CLAUDE.md
 -->
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>酷家乐AI PRO会员 · 2026-10-21-v25</title><style>/*
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>酷家乐AI PRO会员 · 2026-10-21-v26</title><style>/*
  * [INPUT]: pricing-cards.mjs、pricing-calculator-view.mjs与build-pricing-html.mjs的语义结构。
  * [OUTPUT]: 定价工作页、原图对照、算法/消耗数据折叠区与消耗合表的响应式样式。
  * [POS]: 三份单文件HTML的工作页样式源；本方深色销售样式由membership-sales.css提供。
@@ -72,7 +72,7 @@ body.membership-showcase{background:#090f15;color:#f7faff}.membership-sales-page
 .ai-allowance-pending>span{white-space:normal}.ai-allowance-pending>span>small{display:block;margin-left:0;font-size:11px}.ai-allowance-pending .ai-allowance-status{display:inline-block;margin:2px 0 4px}
 </style></head><body class="membership-showcase">
 <!--
-THESIS: KooVision百张价按对应会费与满额使用额度均摊；独立日期版本回溯；原截图横向核对权益；4个已上线模型、5项规格采用会议价（Seedream 1K/2K同60豆），9项待上线含GPT2.5 1K用户确认40豆及其余基础规格毛利向上20豆取整，目标试算跟随当前周期与消耗率。
+THESIS: KooVision百张价按对应会费与满额使用额度均摊；独立日期版本回溯；原截图横向核对权益；4个已上线模型、5项规格采用会议价（Seedream 1K/2K同60豆），9项待上线含GPT2.5用户确认40/60/80豆及其余六项基础规格毛利向上20豆取整，目标试算跟随当前周期与消耗率。
 OWN-WORLD: 我方保留深色蓝紫购买卡片，学长使用原始白卡截图；内部表格白底橙色整数核豆，参数与消耗毛利同表。
 STORY: 先核对原图权益，再按默认月卡满用试算；算法/消耗数据折叠按需查看，核豆双向调整，基线独立保留。
 FIRST VIEWPORT: 日期版本，下方我方生成图和学长原图并排；窄屏局部横滚，图片可查看原尺寸。
@@ -115,5 +115,5 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
  </ul>
   </article></div>
  <p class="ai-member-existing">老会员可直接叠加开通，不影响设计会员权益</p>
- <div class="ai-showcase-notes"><p>百张价按对应周期会费、每月核豆全部用于KooVision1.0（Flux） 2K且满额使用折算，年卡按12个月计。</p><p>各功能共享每月7200核豆；KooVision1.0（Flux）按2K 10豆/张、Seedream 5 Pro按1K/2K 60豆/张、GPT2.5按1K medium 40豆/张折算（待上线方案），三档次数不叠加。</p><p>AI编辑、AI扩图及全景图优化待上线；无限下载指已生成作品下载。</p><p>2026-10-21-v25 · 含GPT2.5待上线方案</p></div>
+ <div class="ai-showcase-notes"><p>百张价按对应周期会费、每月核豆全部用于KooVision1.0（Flux） 2K且满额使用折算，年卡按12个月计。</p><p>各功能共享每月7200核豆；KooVision1.0（Flux）按2K 10豆/张、Seedream 5 Pro按1K/2K 60豆/张、GPT2.5按1K medium 40豆/张折算（待上线方案），三档次数不叠加。</p><p>AI编辑、AI扩图及全景图优化待上线；无限下载指已生成作品下载。</p><p>2026-10-21-v26 · 含GPT2.5待上线方案</p></div>
  </section></main><script>document.querySelectorAll('[data-purchase-preview]').forEach(button=>button.addEventListener('click',()=>{const note=button.parentElement.querySelector('.ai-purchase-feedback');note.textContent=button.dataset.purchasePreview+'会员 ¥'+button.dataset.purchasePrice+' · 当前为方案效果预览';note.hidden=false;}));</script></body></html>

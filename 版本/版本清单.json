@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-21-v25",
+  "current": "2026-10-21-v26",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -353,6 +353,20 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "2b68a32593872dcd4e37f35b1c3bbe06ce122ab43cd5c21ceaa83b52d807566c"
+      }
+    },
+    {
+      "id": "2026-10-21-v26",
+      "date": "2026-10-21",
+      "label": "GPT2.5 medium固定报价调整为40/60/80豆",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "657973c1ad72aff458d2949ec82881980009e3d66b0222067236c2bb9d4a2ec1",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "e94945166a1c7853bac57aa8cf9ace5657549c7f5fad4e4b8b45bf2131cd7ade"
       }
     }
   ],

@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-21-v25",
-  "prompt": "ORIGIN: Browser screenshot of authored Kujiale AI PRO cards. Meeting prices: annual limited-time 398 yuan with 499 yuan strikethrough, monthly 59 yuan; shared 7200 beans yield 720 KooVision1.0（Flux） 2K or 120 Seedream 5 Pro images or 180 GPT2.5 1K medium images (pending launch); Flux 4K is excluded from the sales allowance. Explicit KooVision1.0（Flux） 2K per-100-image fee apportionment, annual 4.61 yuan / monthly 8.19 yuan at full allowance, sits below 7200 beans within the credit group and before the CTA. Each allowance ends with the exact 11px note: *注：生成次数为单一模型的估算值（实际因参数而异）. Centered prices, smaller or, six benefits without 3D, shared wallet notes below both cards. Not AI generated. Chromium 1200px / deviceScaleFactor 2; cropped to membership-art.",
+  "version": "2026-10-21-v26",
+  "prompt": "ORIGIN: Browser screenshot of authored Kujiale AI PRO cards. Meeting prices: annual limited-time 398 yuan with 499 yuan strikethrough, monthly 59 yuan; shared 7200 beans yield 720 KooVision1.0（Flux） 2K or 120 Seedream 5 Pro images or 180 GPT2.5 1K medium images (pending launch); Flux 4K is excluded from the sales allowance. Explicit KooVision1.0（Flux） 2K per-100-image fee apportionment, annual 4.61 yuan / monthly 8.19 yuan at full allowance, sits below 7200 beans within the credit group and before the CTA. Each allowance ends with the exact 11px note: *注：生成次数为单一模型的估算值（实际因参数而异）. Centered prices, smaller or, six benefits without 3D, shared wallet notes below both cards. Not AI generated. Chromium 1200px / deviceScaleFactor 2; cropped to membership-art. V26 fixed GPT2.5 medium baseline is 40/60/80 beans; the sales allowance stays 180 images for 1K medium.",
   "source": "AI会员购买页.html",
-  "sourceSha256": "48eae098329ca4ac5cf9be482a9ecb81044b3847ae35cb48d227654ee18853e5"
+  "sourceSha256": "9d317c22e7a8692b2461885ca46058e006b1e97176e02df60fd8c5c1986a6efc",
+  "width": 2400,
+  "height": 2450,
+  "capture": {
+    "engine": "Chromium",
+    "browserVersion": "155.0.8059.86",
+    "headless": true,
+    "args": [
+      "--disable-gpu"
+    ],
+    "viewport": {
+      "width": 1200,
+      "height": 1100
+    },
+    "deviceScaleFactor": 2,
+    "selector": "#membership-art",
+    "method": "Playwright locator.screenshot",
+    "provenance": "browser screenshot",
+    "generatedByAI": false
+  },
+  "imageSha256": "03cd43638e88ca2c6e6d75f4ad55361bf41f681350a98629bd4b28eeb27aa6d3",
+  "provenanceEmbedded": true
 }

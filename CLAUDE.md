@@ -2,21 +2,19 @@
 HTML + PNG + 日期版本索引
 > L2 | 父级: ../CLAUDE.md
 
-当前版本为2026-10-21-v25；在V24原11行的价格、成本及来源保持不变的基础上，追加GPT2.5 medium三规格，形成14行＝5已上线规格＋9待上线规格。GPT2.5全部标记待上线；用户确认的1K medium为40核豆/张、pricingBasis=user-confirmed，确认的是方案定价基准，不表示已经生产上线。2K/4K分别为100/120核豆的待上线参考建议，沿1K的40豆/0.0624元毛利基准向上取20倍数；新增id11–13，V01–V24单HTML冻结。
+[最新版](https://dai0519.github.io/ai-membership-pricing/) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
 
-腾讯TencentVOD / Flare成本沿10月13日固定源，引用本聊天10月21日对公司OneAPI腾讯Flare模板八折口径的实时核对：1K/2K/4K medium分别0.0624/0.1456/0.1816元/张；这不是公司实付账单核验。原Flux4K的0.06元仍单独标记user-estimate。
+当前版本为2026-10-21-v26。本轮仅按用户确认，将GPT2.5 medium的1K/2K/4K固定报价改为40/60/80核豆；三行pricingBasis均为user-confirmed，使用policy.fixedSpecBeans逐规格固定值，不再携带referencePricing。原十一模型对象、腾讯TencentVOD八折模板成本0.0624/0.1456/0.1816元、14行＝5线上＋9待上线保持；原六条待上线参考继续原规则，GPT2.5三档均仍待上线，方案确认不等于生产上架。
 
-月卡59元、年卡398元（499划线原价）、每月7200核豆及默认目标37.71%保持。两张销售方案卡追加“GPT2.5 1K medium 180张/月（待上线）”，与KooVision1.0（Flux）2K 720张/月或Seedream 5 Pro120张/月共用7200核豆，三项次数不能相加；2K/4K参考建议不进入宣传张数。
+7200核豆下GPT2.5三档单模型最多180/120/90张/月。销售仍只写1K medium180张/月（待上线），与KooVision2K720张或Seedream120张共享钱包、不能相加；月59、年398（499划线）、每月7200及37.71%默认目标保持。目标草稿仍为20/40/40，恢复回本版固定40/60/80；试算不改固定基准或销售额度。
 
-默认37.71%月满用下，GPT2.5固定基准为40/100/120，动态目标建议为20/40/40；恢复回固定基准，应用仅改草稿，不改定价基准或销售180张。
-
-V25本地计算、浏览器业务验证和单HTML归档已通过：独立Decimal/整数钱包DP、Node 700网格/56目标/旧348数；V24原十一行整行完全一致。25版单HTML及SHA与本地发布副本一致，V24冻结未改；孤立页核14行、GPT搜索3行、40/100/120初始基准、20/40/40目标草稿与恢复，固定数据不变、图片全部解码，无外部请求或JS错误。父代理已视读销售/模型四图与comparison共五图，另有代理视读新增三图，未发现缺陷；一次detector为50 advisory/0 warning，均对应冻结V24旧CSS行，newFindings=[]。本轮3张主栅格扫描为3 rasters/0 missing；两张新导图由sidecar prompt与sourceSHA追溯来源，不宣称V25已经内嵌图片元数据。独立fresh终审已全文回读，disposition: ship、material_fixes: 无；静态内容提交`d1509b18c7ba2ab45b28c13d40f8b9d8f8eceb05`已在GitHub Pages built，[Actions任务39566330382](https://github.com/DAi0519/ai-membership-pricing/actions/runs/39566330382)成功。2026-10-21 16:04（北京时间）回读的首页、V25日期页、索引/清单、销售页与三张主图共8项首次HTTP 200、SHA均与本地一致；headless Chrome局部交互已核搜索3行、独立改60/恢复40-100-120、37.71%目标20-40-40、销售180待上线及共享钱包不可叠加、25档索引与V25导航，errors=[]。这是headless Chrome验证，不冒称用户原生Chrome实测。2026-10-19的V24部署仅为历史证明。
+本次静态V26发布的本地实际记录：独立Decimal/整数钱包DP及Node700网格/56目标/旧348数通过；两张主导图已刷新并内嵌来源元数据，3 rasters/0 missing；26档单HTML生成、旧SHA全部通过、V25冻结。发布数据契约为GPT2.5 40/60/80、三档user-confirmed、无referencePricing；销售1K180、目标草稿20/40/40和恢复40/60/80保持分离。本地定向浏览器及孤立归档已passed，固定价/张数、目标/恢复、三档增购/六毛利/销售边界与原十一对象继承均通过，JS错误和外部请求为空；线上验收单独记录在源目录方案/.impeccable/review/2026-10-21-v26-pages-readback.json，不以静态说明代替线上结果。V01–V25及其旧证据保持历史。
 
 成员清单
 版本/: 每个日期号只留一份自包含HTML，共用清单与索引；工作源单份在../../方案/
-index.html: 当前V25线上发布别名，追加腾讯GPT2.5 medium 40/100/120豆，14行5线上9待上线与37.71目标；本地计算/浏览器/归档通过，独立终审ship、无material fixes；内容commit d1509b18已built，8项首次HTTP 200/SHA及headless Chrome局部交互通过
-AI会员购买页.html: V25销售方案，保留KooVision2K720/Seedream120并追加GPT2.5 1K medium180张待上线替代额度，三项共7200钱包
-AI会员购买卡片.png: 本方三项替代额度购买图，GPT2.5 1K medium180张标待上线；本轮已生成，父代理与代理局部视读无缺陷，独立终审ship、无material fixes
+index.html: V26静态发布入口，GPT2.5 medium固定40/60/80、14行5线上9待上线；本地实际验收与线上回读分别记录
+AI会员购买页.html: V26销售方案，保留KooVision2K720/Seedream120并追加GPT2.5 1K medium180张待上线替代额度，三项共7200钱包
+AI会员购买卡片.png: 本方三项替代额度购买图，GPT2.5 1K medium180张标待上线；V26已刷新并内嵌来源元数据、3 raster扫描0missing，销售语义沿V25
 AI会员购买卡片.png.json: 本方图片HTML SHA与来源
 首页横向对比.html: 我方更新图与学长原截图并排
 首页横向对比.png: 横向对比高清图
@@ -30,6 +28,20 @@ AI会员购买卡片.png.json: 本方图片HTML SHA与来源
 README.md: 版本入口与正式发布步骤
 .nojekyll: 直接发布静态文件
 CLAUDE.md: 本工作副本地图
+
+## V25历史方案与验收
+
+以下原文只描述V25的40/100/120与对应验收，不属于V26当前报价或本轮通过证明。
+
+当前版本为2026-10-21-v25；在V24原11行的价格、成本及来源保持不变的基础上，追加GPT2.5 medium三规格，形成14行＝5已上线规格＋9待上线规格。GPT2.5全部标记待上线；用户确认的1K medium为40核豆/张、pricingBasis=user-confirmed，确认的是方案定价基准，不表示已经生产上线。2K/4K分别为100/120核豆的待上线参考建议，沿1K的40豆/0.0624元毛利基准向上取20倍数；新增id11–13，V01–V24单HTML冻结。
+
+腾讯TencentVOD / Flare成本沿10月13日固定源，引用本聊天10月21日对公司OneAPI腾讯Flare模板八折口径的实时核对：1K/2K/4K medium分别0.0624/0.1456/0.1816元/张；这不是公司实付账单核验。原Flux4K的0.06元仍单独标记user-estimate。
+
+月卡59元、年卡398元（499划线原价）、每月7200核豆及默认目标37.71%保持。两张销售方案卡追加“GPT2.5 1K medium 180张/月（待上线）”，与KooVision1.0（Flux）2K 720张/月或Seedream 5 Pro120张/月共用7200核豆，三项次数不能相加；2K/4K参考建议不进入宣传张数。
+
+默认37.71%月满用下，GPT2.5固定基准为40/100/120，动态目标建议为20/40/40；恢复回固定基准，应用仅改草稿，不改定价基准或销售180张。
+
+V25本地计算、浏览器业务验证和单HTML归档已通过：独立Decimal/整数钱包DP、Node 700网格/56目标/旧348数；V24原十一行整行完全一致。25版单HTML及SHA与本地发布副本一致，V24冻结未改；孤立页核14行、GPT搜索3行、40/100/120初始基准、20/40/40目标草稿与恢复，固定数据不变、图片全部解码，无外部请求或JS错误。父代理已视读销售/模型四图与comparison共五图，另有代理视读新增三图，未发现缺陷；一次detector为50 advisory/0 warning，均对应冻结V24旧CSS行，newFindings=[]。本轮3张主栅格扫描为3 rasters/0 missing；两张新导图由sidecar prompt与sourceSHA追溯来源，不宣称V25已经内嵌图片元数据。独立fresh终审已全文回读，disposition: ship、material_fixes: 无；静态内容提交`d1509b18c7ba2ab45b28c13d40f8b9d8f8eceb05`已在GitHub Pages built，[Actions任务39566330382](https://github.com/DAi0519/ai-membership-pricing/actions/runs/39566330382)成功。2026-10-21 16:04（北京时间）回读的首页、V25日期页、索引/清单、销售页与三张主图共8项首次HTTP 200、SHA均与本地一致；headless Chrome局部交互已核搜索3行、独立改60/恢复40-100-120、37.71%目标20-40-40、销售180待上线及共享钱包不可叠加、25档索引与V25导航，errors=[]。这是headless Chrome验证，不冒称用户原生Chrome实测。2026-10-19的V24部署仅为历史证明。
 
 ## V24及更早历史发布与验收
 

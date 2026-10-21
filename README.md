@@ -1,6 +1,18 @@
 # AI会员定价 · GitHub Pages 发布目录
 
-[最新版](https://dai0519.github.io/ai-membership-pricing/) · [固定V25](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v25/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
+[最新版](https://dai0519.github.io/ai-membership-pricing/) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [固定V25历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v25/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
+
+当前版本为2026-10-21-v26。本轮仅按用户确认，将GPT2.5 medium的1K/2K/4K固定报价改为40/60/80核豆；三行pricingBasis均为user-confirmed，使用policy.fixedSpecBeans逐规格固定值，不再携带referencePricing。原十一模型对象、腾讯TencentVOD八折模板成本0.0624/0.1456/0.1816元、14行＝5线上＋9待上线保持；原六条待上线参考继续原规则，GPT2.5三档均仍待上线，方案确认不等于生产上架。
+
+7200核豆下GPT2.5三档单模型最多180/120/90张/月。销售仍只写1K medium180张/月（待上线），与KooVision2K720张或Seedream120张共享钱包、不能相加；月59、年398（499划线）、每月7200及37.71%默认目标保持。目标草稿仍为20/40/40，恢复回本版固定40/60/80；试算不改固定基准或销售额度。
+
+本次静态V26发布的本地实际记录：独立Decimal/整数钱包DP及Node700网格/56目标/旧348数通过；两张主导图已刷新并内嵌来源元数据，3 rasters/0 missing；26档单HTML生成、旧SHA全部通过、V25冻结。发布数据契约为GPT2.5 40/60/80、三档user-confirmed、无referencePricing；销售1K180、目标草稿20/40/40和恢复40/60/80保持分离。本地定向浏览器及孤立归档已passed，固定价/张数、目标/恢复、三档增购/六毛利/销售边界与原十一对象继承均通过，JS错误和外部请求为空；线上验收单独记录在源目录方案/.impeccable/review/2026-10-21-v26-pages-readback.json，不以静态说明代替线上结果。V01–V25及其旧证据保持历史。
+
+[V26日期版](版本/2026-10-21-v26/会员定价决策.html) · 本次静态V26发布，线上结果看V26回读证据。
+
+## V25历史方案与验收
+
+以下原文只描述V25的40/100/120与对应验收，不属于V26当前报价或本轮通过证明。
 
 当前版本为2026-10-21-v25；在V24原11行的价格、成本及来源保持不变的基础上，追加GPT2.5 medium三规格，形成14行＝5已上线规格＋9待上线规格。GPT2.5全部标记待上线；用户确认的1K medium为40核豆/张、pricingBasis=user-confirmed，确认的是方案定价基准，不表示已经生产上线。2K/4K分别为100/120核豆的待上线参考建议，沿1K的40豆/0.0624元毛利基准向上取20倍数；新增id11–13，V01–V24单HTML冻结。
 
