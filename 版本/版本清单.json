@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-16-v24",
+  "current": "2026-10-21-v25",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -339,6 +339,20 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "b705ea94aa8235cafb165efb7b436574feb8b905f623bcf876937d15f4536f44"
+      }
+    },
+    {
+      "id": "2026-10-21-v25",
+      "date": "2026-10-21",
+      "label": "新增腾讯GPT2.5 · 1K medium40豆起",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "bf082282ba1551bd87824883a2ab5bbe3da2de054d1516fae3d1172b2deaa300",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "2b68a32593872dcd4e37f35b1c3bbe06ce122ab43cd5c21ceaa83b52d807566c"
       }
     }
   ],

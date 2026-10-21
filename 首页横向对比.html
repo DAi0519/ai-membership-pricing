@@ -5,7 +5,7 @@
 [POS]: build-pricing-html.mjs生成，版本冻结后不覆盖。
 [PROTOCOL]: 变更时更新此头部，然后检查 CLAUDE.md
 -->
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>会员权益原截图横向对照 · 2026-10-16-v24</title><style>/*
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>会员权益原截图横向对照 · 2026-10-21-v25</title><style>/*
  * [INPUT]: pricing-cards.mjs、pricing-calculator-view.mjs与build-pricing-html.mjs的语义结构。
  * [OUTPUT]: 定价工作页、原图对照、算法/消耗数据折叠区与消耗合表的响应式样式。
  * [POS]: 三份单文件HTML的工作页样式源；本方深色销售样式由membership-sales.css提供。
@@ -43,7 +43,7 @@
 .cost-estimate{display:block;margin-top:4px;font-size:11px;color:var(--muted)}
 /*
  * [INPUT]: pricing-cards.mjs生成的本方AI PRO年度/月度购买卡片。
- * [OUTPUT]: 现有深色蓝紫卡片，居中优惠价、核豆后开通、核豆下KooVision百张价、两档额度及估算注释、小号“或”及六项权益。
+ * [OUTPUT]: 现有深色蓝紫卡片，居中优惠价、核豆后开通、核豆下KooVision百张价、三档额度与GPT2.5待上线状态及估算注释、小号“或”及六项权益。
  * [POS]: 单独销售页与内部定价页权益模块的样式源，不改变内部财务表格。
  * [PROTOCOL]: 变更时更新此头部，然后检查 CLAUDE.md
  */
@@ -59,7 +59,7 @@ body.membership-showcase{background:#090f15;color:#f7faff}.membership-sales-page
 @media(max-width:600px){.ai-membership{padding:24px 18px;border-radius:15px}.ai-brand{font-size:17px;gap:8px}.ai-preview{font-size:9px;padding:4px 6px}.ai-showcase-title{margin:23px 0}.ai-showcase-title h2{font-size:26px}.ai-showcase-title p{font-size:11px}.ai-plans{grid-template-columns:1fr;gap:19px}.ai-plan{padding:26px 24px 19px}.ai-plan-title{flex-wrap:nowrap}.ai-plan h3{font-size:22px}.ai-price b{font-size:51px}.ai-benefits li{font-size:17px;min-height:40px}.ai-benefits strong{font-size:19px}.ai-member-existing{font-size:11px}.ai-showcase-notes{text-align:left;font-size:10px}.membership-sales-page .ai-membership{padding:24px 18px}.membership-sales-page .ai-plan{padding:27px 25px 20px}.membership-sales-page .ai-benefits li{font-size:17px}}
 @media print{.ai-membership{print-color-adjust:exact;-webkit-print-color-adjust:exact;break-inside:avoid}.ai-plans{grid-template-columns:1fr 1fr}.ai-plan{padding:18px 22px;border-radius:18px}.ai-benefits li{min-height:27px;padding:5px 0;font-size:11px}.ai-showcase-title{margin:12px 0 18px}.ai-purchase{margin:14px 0;padding:11px}.ai-price b{font-size:39px}.ai-member-existing{margin:14px 0 9px}.ai-showcase-notes{font-size:9px}}
 
-/* === 核豆后开通；下方两行生图额度共用钱包，不拆成两份权益 === */
+/* === 核豆后开通；下方三档生图额度共用钱包，不拆成两份权益 === */
 .ai-image-allowance{margin-top:20px;padding:18px 0 14px;border-top:1px solid #ffffff1f}.ai-allowance-title{font-size:13px;color:var(--ai-muted);margin-bottom:6px}.ai-allowance-row{display:flex;align-items:baseline;justify-content:space-between;gap:15px;min-height:43px}.ai-allowance-row>span{font-size:18px;font-weight:650;color:var(--ai-text);white-space:nowrap}.ai-allowance-row strong{font-size:34px;line-height:1.2;color:#96dfff;letter-spacing:-.025em;white-space:nowrap}.ai-allowance-row small{font-size:14px;font-weight:500;margin-left:6px;letter-spacing:0;color:var(--ai-muted)}.ai-allowance-or{font-size:12px;font-weight:500;font-style:normal;color:var(--ai-muted);margin-right:6px}.ai-allowance-status{font-size:10px;font-weight:500;font-style:normal;color:#d4e7ff;background:#52719559;border-radius:3px;padding:2px 4px;margin-left:6px;white-space:nowrap}
 .ai-hundred-price{display:flex;align-items:baseline;justify-content:center;gap:7px;margin:5px 0 0;color:var(--ai-muted);font-size:13px;line-height:1.5}.ai-hundred-price b{font-size:20px;font-weight:700;color:var(--ai-text);white-space:nowrap}
 @media(max-width:900px){.ai-allowance-row>span{font-size:17px}.ai-allowance-row strong{font-size:31px}.ai-allowance-row small{font-size:13px}}
@@ -67,12 +67,15 @@ body.membership-showcase{background:#090f15;color:#f7faff}.membership-sales-page
 @media print{.ai-image-allowance{padding:8px 0}.ai-allowance-row{min-height:29px}.ai-allowance-row>span{font-size:12px}.ai-allowance-row strong{font-size:24px}.ai-allowance-row small{font-size:10px}.ai-allowance-or{font-size:9px}.ai-allowance-status{font-size:8px}}
 
 .ai-allowance-note{margin:7px 0 0;font-size:11px;line-height:1.6;color:var(--ai-muted)}
+
+/* === 待上线规格独占小字行，窄屏保持模型名与张数清晰 === */
+.ai-allowance-pending>span{white-space:normal}.ai-allowance-pending>span>small{display:block;margin-left:0;font-size:11px}.ai-allowance-pending .ai-allowance-status{display:inline-block;margin:2px 0 4px}
 </style></head><body>
 <!--
-THESIS: KooVision百张价按对应会费与满额使用额度均摊；独立日期版本回溯；原截图横向核对权益；4个已上线模型、5项规格采用会议价（Seedream 1K/2K同60豆），6项待上线按基础规格毛利向上20豆取整，目标试算跟随当前周期与消耗率。
+THESIS: KooVision百张价按对应会费与满额使用额度均摊；独立日期版本回溯；原截图横向核对权益；4个已上线模型、5项规格采用会议价（Seedream 1K/2K同60豆），9项待上线含GPT2.5 1K用户确认40豆及其余基础规格毛利向上20豆取整，目标试算跟随当前周期与消耗率。
 OWN-WORLD: 我方保留深色蓝紫购买卡片，学长使用原始白卡截图；内部表格白底橙色整数核豆，参数与消耗毛利同表。
 STORY: 先核对原图权益，再按默认月卡满用试算；算法/消耗数据折叠按需查看，核豆双向调整，基线独立保留。
 FIRST VIEWPORT: 日期版本，下方我方生成图和学长原图并排；窄屏局部横滚，图片可查看原尺寸。
 FORM: 用户指定原截图横向摆放，沿用seed07573bed的用户参考优先原则，不重选视觉方向。
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
---><main class="comparison-page"><section class="home-comparison" id="home-comparison" aria-label="本方会员卡片与建筑学长原截图横向比较"><h2>会员权益 · 原截图横向对照</h2><p class="lead">年卡会员限时优惠对比建筑学长，月卡低于建筑学长。在新的定价下，面板展示的不同模型生成张数全面高于建筑学长。</p><div class="comparison-scroll" tabindex="0" aria-label="窄屏可横向滚动两家截图"><div class="comparison-image-grid"><figure><figcaption>酷家乐 AI会员<span>¥398/年 · ¥59/月</span></figcaption><a href="AI会员购买卡片.png" target="_blank"><img src="AI会员购买卡片.png" alt="酷家乐年度398和月度59，每月7200核豆，KooVision1.0（Flux） 2K最高720张或Seedream 5 Pro最高120张，年卡原价499限时398，KooVision年卡每百张约4.61元、月卡约8.19元，按满额使用折算"></a></figure><figure><figcaption>建筑学长 · 用户原截图<span>¥398/年 · ¥96/月</span></figcaption><a href="建筑学长原始截图.png" target="_blank"><img src="建筑学长原始截图.png" alt="建筑学长用户原始价格卡，年度398月度96，创意500次、设计智能体150次和其他AI工具200次"></a></figure></div></div></section><p class="version-note">2026-10-16-v24 · 原截图权益参考，未保证模型效果或质量等价</p></main></body></html>
+--><main class="comparison-page"><section class="home-comparison" id="home-comparison" aria-label="本方会员卡片与建筑学长原截图横向比较"><h2>会员权益 · 原截图横向对照</h2><p class="lead">年卡会员限时优惠对比建筑学长，月卡低于建筑学长。在新的定价下，面板展示的不同模型生成张数全面高于建筑学长。</p><div class="comparison-scroll" tabindex="0" aria-label="窄屏可横向滚动两家截图"><div class="comparison-image-grid"><figure><figcaption>酷家乐 AI会员<span>¥398/年 · ¥59/月</span></figcaption><a href="AI会员购买卡片.png" target="_blank"><img src="AI会员购买卡片.png" alt="酷家乐年度398和月度59，每月7200核豆，KooVision1.0（Flux） 2K最高720张或Seedream 5 Pro最高120张，或待上线GPT2.5 1K medium最高180张，年卡原价499限时398，KooVision年卡每百张约4.61元、月卡约8.19元，按满额使用折算"></a></figure><figure><figcaption>建筑学长 · 用户原截图<span>¥398/年 · ¥96/月</span></figcaption><a href="建筑学长原始截图.png" target="_blank"><img src="建筑学长原始截图.png" alt="建筑学长用户原始价格卡，年度398月度96，创意500次、设计智能体150次和其他AI工具200次"></a></figure></div></div></section><p class="version-note">2026-10-21-v25 · 原截图权益参考，未保证模型效果或质量等价</p></main></body></html>
