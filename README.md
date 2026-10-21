@@ -1,6 +1,8 @@
 # AI会员定价 · GitHub Pages 发布目录
 
-当前本地版本为2026-10-21-v25；在V24原11行的价格、成本及来源保持不变的基础上，追加GPT2.5 medium三规格，形成14行＝5已上线规格＋9待上线规格。GPT2.5全部标记待上线；用户确认的1K medium为40核豆/张、pricingBasis=user-confirmed，确认的是方案定价基准，不表示已经生产上线。2K/4K分别为100/120核豆的待上线参考建议，沿1K的40豆/0.0624元毛利基准向上取20倍数；新增id11–13，V01–V24单HTML冻结。
+[最新版](https://dai0519.github.io/ai-membership-pricing/) · [固定V25](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v25/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
+
+当前版本为2026-10-21-v25；在V24原11行的价格、成本及来源保持不变的基础上，追加GPT2.5 medium三规格，形成14行＝5已上线规格＋9待上线规格。GPT2.5全部标记待上线；用户确认的1K medium为40核豆/张、pricingBasis=user-confirmed，确认的是方案定价基准，不表示已经生产上线。2K/4K分别为100/120核豆的待上线参考建议，沿1K的40豆/0.0624元毛利基准向上取20倍数；新增id11–13，V01–V24单HTML冻结。
 
 腾讯TencentVOD / Flare成本沿10月13日固定源，引用本聊天10月21日对公司OneAPI腾讯Flare模板八折口径的实时核对：1K/2K/4K medium分别0.0624/0.1456/0.1816元/张；这不是公司实付账单核验。原Flux4K的0.06元仍单独标记user-estimate。
 
@@ -8,9 +10,9 @@
 
 默认37.71%月满用下，GPT2.5固定基准为40/100/120，动态目标建议为20/40/40；恢复回固定基准，应用仅改草稿，不改定价基准或销售180张。
 
-V25本地计算、浏览器业务验证和单HTML归档已通过：独立Decimal/整数钱包DP、Node 700网格/56目标/旧348数；V24原十一行整行完全一致。25版单HTML及SHA与本地发布副本一致，V24冻结未改；孤立页核14行、GPT搜索3行、40/100/120初始基准、20/40/40目标草稿与恢复，固定数据不变、图片全部解码，无外部请求或JS错误。父代理已视读销售/模型四图与comparison共五图，另有代理视读新增三图，未发现缺陷；一次detector为50 advisory/0 warning，均对应冻结V24旧CSS行，newFindings=[]。本轮3张主栅格扫描为3 rasters/0 missing；两张新导图由sidecar prompt与sourceSHA追溯来源，不宣称V25已经内嵌图片元数据。独立fresh终审进行中，尚未推送V25；本地发布副本已准备，部署与线上回读仍须另留V25证据。2026-10-19的V24部署仅为历史证明。
+V25本地计算、浏览器业务验证和单HTML归档已通过：独立Decimal/整数钱包DP、Node 700网格/56目标/旧348数；V24原十一行整行完全一致。25版单HTML及SHA与本地发布副本一致，V24冻结未改；孤立页核14行、GPT搜索3行、40/100/120初始基准、20/40/40目标草稿与恢复，固定数据不变、图片全部解码，无外部请求或JS错误。父代理已视读销售/模型四图与comparison共五图，另有代理视读新增三图，未发现缺陷；一次detector为50 advisory/0 warning，均对应冻结V24旧CSS行，newFindings=[]。本轮3张主栅格扫描为3 rasters/0 missing；两张新导图由sidecar prompt与sourceSHA追溯来源，不宣称V25已经内嵌图片元数据。独立fresh终审已全文回读，disposition: ship、material_fixes: 无；静态内容提交`d1509b18c7ba2ab45b28c13d40f8b9d8f8eceb05`已在GitHub Pages built，[Actions任务39566330382](https://github.com/DAi0519/ai-membership-pricing/actions/runs/39566330382)成功。2026-10-21 16:04（北京时间）回读的首页、V25日期页、索引/清单、销售页与三张主图共8项首次HTTP 200、SHA均与本地一致；headless Chrome局部交互已核搜索3行、独立改60/恢复40-100-120、37.71%目标20-40-40、销售180待上线及共享钱包不可叠加、25档索引与V25导航，errors=[]。这是headless Chrome验证，不冒称用户原生Chrome实测。2026-10-19的V24部署仅为历史证明。
 
-[日期版本索引](版本/版本索引.html) · [V25本地独立页面](版本/2026-10-21-v25/会员定价决策.html)
+[日期版本索引](版本/版本索引.html) · [V25独立页面](版本/2026-10-21-v25/会员定价决策.html)
 
 ## V24及更早历史发布与验收
 
