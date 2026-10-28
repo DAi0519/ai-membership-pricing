@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-28-v29",
+  "current": "2026-10-28-v30",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -409,6 +409,20 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "747fc6010a191d297dc4483c2c02912256492d61bec7c9bb53a8529e20ec5993"
+      }
+    },
+    {
+      "id": "2026-10-28-v30",
+      "date": "2026-10-28",
+      "label": "20%月卡满用目标正式基准，重算17项核豆并删除本版标价/张列",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "3fa1c996e8a80399833e1aea812a1c563ea6f5e6129609a75bb1f4d77a295223",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "0cd4749305db018e3ea5ab344a07dec6db749cc4b1785c6c08ce99e41adef408"
       }
     }
   ],
