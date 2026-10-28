@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-28-v33",
+  "current": "2026-10-28-v34",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -465,6 +465,20 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "f11d065ccd8e7c4e2b344e93c0a6465ab85e0f8263ff1872d3fa96954cac3b7f"
+      }
+    },
+    {
+      "id": "2026-10-28-v34",
+      "date": "2026-10-28",
+      "label": "主表明确每张图原价与成本，token说明仅留成本明细；Google全价与FX6.7165保持",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "e7ab6d5ecdaa44791ac66bdad1a5e107889329f4f3920932d585fd856119dd12",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "14c99d996ced21b184ce918db6972beb52ebf5c02161ee42e245a1b643455b75"
       }
     }
   ],

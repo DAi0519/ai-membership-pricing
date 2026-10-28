@@ -2,11 +2,11 @@
 HTML + PNG + 日期版本索引
 > L2 | 父级: ../CLAUDE.md
 
-[最新版](https://dai0519.github.io/ai-membership-pricing/) · [V33日期版](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v33/会员定价决策.html) · [固定V32历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v32/会员定价决策.html) · [固定V31历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v31/会员定价决策.html) · [固定V30历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v30/会员定价决策.html) · [固定V29历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v29/会员定价决策.html) · [固定V28历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v28/会员定价决策.html) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
+[最新版](https://dai0519.github.io/ai-membership-pricing/) · [V34日期版](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v34/会员定价决策.html) · [固定V33历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v33/会员定价决策.html) · [固定V32历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v32/会员定价决策.html) · [固定V31历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v31/会员定价决策.html) · [固定V30历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v30/会员定价决策.html) · [固定V29历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v29/会员定价决策.html) · [固定V28历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v28/会员定价决策.html) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
 
 成员清单
 版本/: 每个日期号只留一份自包含HTML，共用清单与索引；工作源单份在../../方案/
-index.html: V33主表入口，Banana2.1 Google美元100%/FX6.7165输出预算；其他14项与V28权益素材保持
+index.html: V34主表入口，每张图原价/成本与100%折扣，token明细折叠；V33金额核豆与V28权益素材保持
 AI会员购买页.html: 冻结V28销售HTML，720/240/360共钱包，本轮不更新
 AI会员购买卡片.png: 冻结V28权益图，本轮不更新且与源目录SHA保持
 AI会员购买卡片.png.json: 冻结V28会员图来源旁车，本轮不更新
@@ -23,7 +23,11 @@ README.md: 版本入口与正式发布步骤
 .nojekyll: 直接发布静态文件
 CLAUDE.md: 本工作副本地图
 
-当前工作版本为2026-10-28-v33，上一版为已冻结并发布的2026-10-28-v32。Banana 2.1依用户指定采用OneAPI的GOOGLE美元渠道，100%原价，1K/2K/4K输出报价$0.0336/$0.0504/$0.113；按2026-10-28官方参考中间价1美元=6.7165元预算折算，人民币成本¥0.2256744/¥0.3385116/¥0.7589645，20%目标向上取档后核豆仍40/60/120。输入文本/参考图$1.5/百万token及输出文字/思考$7.5/百万token另计，表内毛利为图片输出预算口径，不代表完整调用利润；汇率不是公司实付汇率。其他14项、17行15列、模型列渠道、百分比单次展示和V28权益素材保持。本地独立计算与定向浏览器核验已通过，线上内容以固定日期版为准。
+当前工作版本为2026-10-28-v34，上一版为已冻结并发布的2026-10-28-v33。本轮仅澄清按每张生成图计价：主表改为“API原价/张”“每张图成本”，Google折扣仅显示100%，移除“仅输出”和主表token长说明；相关计费字段及未参与本次单价/核豆的边界保留在折叠“模型成本明细”。Google 1K/2K/4K仍按$0.0336/$0.0504/$0.113每张、2026-10-28参考中间价6.7165折算为¥0.2256744/¥0.3385116/¥0.7589645，核豆40/60/120。V33全部当前金额、17行15列、20%默认恢复及V28权益素材保持。本地计算与浏览器核验已通过，线上内容以固定日期版为准。
+
+## V33历史方案与验收
+
+V33当时工作版本为2026-10-28-v33，上一版为已冻结并发布的2026-10-28-v32。Banana 2.1依用户指定采用OneAPI的GOOGLE美元渠道，100%原价，1K/2K/4K输出报价$0.0336/$0.0504/$0.113；按2026-10-28官方参考中间价1美元=6.7165元预算折算，人民币成本¥0.2256744/¥0.3385116/¥0.7589645，20%目标向上取档后核豆仍40/60/120。输入文本/参考图$1.5/百万token及输出文字/思考$7.5/百万token另计，表内毛利为图片输出预算口径，不代表完整调用利润；汇率不是公司实付汇率。其他14项、17行15列、模型列渠道、百分比单次展示和V28权益素材保持。本地独立计算与定向浏览器核验已通过，线上内容以固定日期版为准。
 
 ## V32历史方案与验收
 
