@@ -2,11 +2,11 @@
 HTML + PNG + 日期版本索引
 > L2 | 父级: ../CLAUDE.md
 
-[最新版](https://dai0519.github.io/ai-membership-pricing/) · [V31日期版](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v31/会员定价决策.html) · [固定V30历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v30/会员定价决策.html) · [固定V29历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v29/会员定价决策.html) · [固定V28历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v28/会员定价决策.html) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
+[最新版](https://dai0519.github.io/ai-membership-pricing/) · [V32日期版](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v32/会员定价决策.html) · [固定V31历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v31/会员定价决策.html) · [固定V30历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v30/会员定价决策.html) · [固定V29历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v29/会员定价决策.html) · [固定V28历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v28/会员定价决策.html) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
 
 成员清单
 版本/: 每个日期号只留一份自包含HTML，共用清单与索引；工作源单份在../../方案/
-index.html: V31主表入口，模型列标OneAPI渠道；17行15列、20%目标与V30经济字段保持，V28权益素材不变
+index.html: V32主表入口，API折扣去重仅保留百分比/必要仅输出；V31全部定价、模型渠道及V28权益素材保持
 AI会员购买页.html: 冻结V28销售HTML，720/240/360共钱包，本轮不更新
 AI会员购买卡片.png: 冻结V28权益图，本轮不更新且与源目录SHA保持
 AI会员购买卡片.png.json: 冻结V28会员图来源旁车，本轮不更新
@@ -23,7 +23,11 @@ README.md: 版本入口与正式发布步骤
 .nojekyll: 直接发布静态文件
 CLAUDE.md: 本工作副本地图
 
-当前工作版本为2026-10-28-v31，上一版为已冻结并发布的2026-10-28-v30。本轮仅调整渠道标注位置：模型名下显示OneAPI报价渠道，Seedream为Volcengine，Banana与GPT Image为TencentVOD，GPT2.5为TencentVOD · Flare；Flux保留用户核定/估算来源。折后成本列只保留金额与Banana 2.1必要的输入图预算。17项成本、核豆、张数与毛利均保持V30，20%用户目标、17行15列和V28权益素材继续保留。本地渠道展示、成本字段、权益素材冻结与独立归档核验均通过；线上内容以日期版为准。
+当前工作版本为2026-10-28-v32，上一版为已冻结并发布的2026-10-28-v31。本轮仅删除API折扣列重复的“5.1折”“8折”“7.5折”等中文折数，保留百分比；Banana 2.1保留必要的“仅输出”说明。17项费用、核豆、张数与毛利、20%目标、模型列OneAPI渠道及V28权益素材均保持。定向核验已确认折扣去重、经济字段完全等于V31和12项销售素材SHA一致；固定版本入口及版本索引如下，线上内容以日期版为准。
+
+## V31历史方案与验收
+
+V31当时工作版本为2026-10-28-v31，上一版为已冻结并发布的2026-10-28-v30。本轮仅调整渠道标注位置：模型名下显示OneAPI报价渠道，Seedream为Volcengine，Banana与GPT Image为TencentVOD，GPT2.5为TencentVOD · Flare；Flux保留用户核定/估算来源。折后成本列只保留金额与Banana 2.1必要的输入图预算。17项成本、核豆、张数与毛利均保持V30，20%用户目标、17行15列和V28权益素材继续保留。本地渠道展示、成本字段、权益素材冻结与独立归档核验均通过；线上内容以日期版为准。
 
 2026-10-28发布验收：V31内容提交`ca2a49480ad1603ad1479aa50ddca7b4b6ff0ef6`已推送，部署提交`54473e1f7e64b14dcb3e6781fec0d64daac69b47`的Pages built、Actions成功；10项线上资源HTTP 200且SHA与本地一致，6项线上销售素材保持V28字节。线上headless Chrome已核15个OneAPI渠道/2个Flux来源均在模型列、成本格无渠道、17项原核豆、15列/无人民币标价列、默认/恢复20%、应用目标不改基准、全部/线上下界21.90%/22.14%、图片解码与390窄屏，无JS错误。证据：`方案/.impeccable/review/2026-10-28-v31-pages-readback.json`。
 

@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-28-v31",
+  "current": "2026-10-28-v32",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -437,6 +437,20 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "349f0f42770ffa653278526e21a34a5b25c0b9071534034e98c4e676b09ccd9f"
+      }
+    },
+    {
+      "id": "2026-10-28-v32",
+      "date": "2026-10-28",
+      "label": "API折扣仅显示百分比，删除5.1折/8折等重复标注",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "94e94cdd53825c44533a63d525da27b87ae9d96b9d63868a8a0e5babba832ead",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "f030d2b0351080a8c5b2bcfe41a36af92a5a145d478b6299f0f0153469f2e74e"
       }
     }
   ],
