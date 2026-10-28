@@ -1,29 +1,8 @@
 {
-  "version": "2026-10-21-v26",
-  "prompt": "ORIGIN: Browser capture of generated Kujiale membership cards with annual 499 strikethrough / 398 limited-time price and 720 KooVision1.0（Flux） 2K or 120 Seedream 5 Pro or 180 GPT2.5 1K medium pending-launch quantities; Flux 4K is excluded from the sales allowance. Explicit KooVision1.0（Flux） 2K per-100-image fee apportionment sits below 7200 beans before each CTA; each allowance ends with the exact 11px single-model estimate note. Cards sit horizontally beside unedited user-provided Jianzhuxuezhang original screenshot 14. Chromium 1800px / deviceScaleFactor 2; not AI generated or a redrawn competitor card. V26 fixed GPT2.5 medium baseline is 40/60/80 beans; the sales allowance stays 180 images for 1K medium.",
+  "version": "2026-10-28-v28",
+  "prompt": "ORIGIN: Chromium authored V28 member cards next to unedited user competitor screenshot. 720 Flux 2K OR 240 Seedream OR 360 pending GPT2.5; shared 7200 beans; 398 annual, 59 monthly. Source screenshot remains unchanged; not AI generated. 1800px, DPR 2.",
   "source": "首页横向对比.html",
-  "sourceSha256": "72769bf75de51833ace3f014019f4937e0b68ad529bdadb0dfeff359c2695556",
+  "sourceSha256": "50abc237f6b1a8898a9358a00bcf670711c0e060a9e51d1da8dcc01c6509710e",
   "rivalSha256": "c7e5082a4e95a7e17e13041ccdfd497ad9e5dfe14f4c954c3b69c1476cf6b7fc",
-  "salesImageSha256": "03cd43638e88ca2c6e6d75f4ad55361bf41f681350a98629bd4b28eeb27aa6d3",
-  "width": 3480,
-  "height": 2038,
-  "capture": {
-    "engine": "Chromium",
-    "browserVersion": "155.0.8059.86",
-    "headless": true,
-    "args": [
-      "--disable-gpu"
-    ],
-    "viewport": {
-      "width": 1800,
-      "height": 1150
-    },
-    "deviceScaleFactor": 2,
-    "selector": "#home-comparison",
-    "method": "Playwright locator.screenshot",
-    "provenance": "browser screenshot",
-    "generatedByAI": false
-  },
-  "imageSha256": "922505c8c7cbd60480a0e8abd16d2f332383602a9934d17ced73ec8dd1c28976",
-  "provenanceEmbedded": true
+  "sha256": "327342a79d3871bd20cc8f6b8fe98054550b25150db89da2da29eb7c96e1f85e"
 }

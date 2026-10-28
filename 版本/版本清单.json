@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-21-v26",
+  "current": "2026-10-28-v28",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -367,6 +367,34 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "e94945166a1c7853bac57aa8cf9ace5657549c7f5fad4e4b8b45bf2131cd7ade"
+      }
+    },
+    {
+      "id": "2026-10-28-v27",
+      "date": "2026-10-28",
+      "label": "新增Banana 2.1三档建议60/80/140与模型折扣核查",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "21b6eac4cfca7ee635343df04762297c78fceff888fd8612b93b3b4c3d407219",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "5716878ee8ec2c30cd78c01ab468ef02e2ea8968c546bd2181a07dc1a087c885"
+      }
+    },
+    {
+      "id": "2026-10-28-v28",
+      "date": "2026-10-28",
+      "label": "全部按最新折扣重算：Seedream30/60、GPT2.5 20/40/40与Banana2.1三档",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "7e39db59399e34c2d0b739c73d9885d1eeec4ea8efed31e4a5bfe13201068cb0",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "842469cb5f8870aac8697d42ab1752cdd897c484d3b651141aff0f84ade4041f"
       }
     }
   ],
