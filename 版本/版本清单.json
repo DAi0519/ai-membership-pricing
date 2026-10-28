@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-28-v28",
+  "current": "2026-10-28-v29",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -395,6 +395,20 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "842469cb5f8870aac8697d42ab1752cdd897c484d3b651141aff0f84ade4041f"
+      }
+    },
+    {
+      "id": "2026-10-28-v29",
+      "date": "2026-10-28",
+      "label": "仅更新定价表：API原价/折扣/折后成本与本版标价毛利，会员图保持V28",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "7a7cc68e1910d4d3672c14250d6370818f7ee6bf7ba2f258731f5e244efff9a5",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "747fc6010a191d297dc4483c2c02912256492d61bec7c9bb53a8529e20ec5993"
       }
     }
   ],
