@@ -9,7 +9,7 @@
 
 [最新版](https://dai0519.github.io/ai-membership-pricing/) · [V31日期版](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v31/会员定价决策.html) · [固定V30历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v30/会员定价决策.html) · [固定V29历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v29/会员定价决策.html) · [固定V28历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v28/会员定价决策.html) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [固定V25历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v25/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
 
-当前工作版本为2026-10-28-v31，上一版为已冻结并发布的2026-10-28-v30。本轮仅调整渠道标注位置：模型名下显示OneAPI报价渠道，Seedream为Volcengine，Banana与GPT Image为TencentVOD，GPT2.5为TencentVOD · Flare；Flux保留用户核定/估算来源。折后成本列只保留金额与Banana 2.1必要的输入图预算。17项成本、核豆、张数与毛利均保持V30，20%用户目标、17行15列和V28权益素材继续保留。当前本地验收通过，线上待本轮回读。
+当前工作版本为2026-10-28-v31，上一版为已冻结并发布的2026-10-28-v30。本轮仅调整渠道标注位置：模型名下显示OneAPI报价渠道，Seedream为Volcengine，Banana与GPT Image为TencentVOD，GPT2.5为TencentVOD · Flare；Flux保留用户核定/估算来源。折后成本列只保留金额与Banana 2.1必要的输入图预算。17项成本、核豆、张数与毛利均保持V30，20%用户目标、17行15列和V28权益素材继续保留。本地渠道展示、成本字段、权益素材冻结与独立归档核验均通过；线上内容以日期版为准。
 
 ## V30历史方案与验收
 
