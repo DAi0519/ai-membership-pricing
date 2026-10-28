@@ -1,15 +1,19 @@
 <!--
-[INPUT]: 用户要求折扣列不重复百分比/折数、V31既有17项定价与V28冻结权益素材。
-[OUTPUT]: V32折扣列去重、十五列表格与V31经济基准；定向核验通过，线上以日期版为准。
-[POS]: 当前V32语义入口；V01–V31仅作历史，20%目标与实际下界分开，试算不回写基准或权益素材。
+[INPUT]: 用户指定Google美元全价与当日参考汇率、V32既有17项定价和V28冻结权益素材。
+[OUTPUT]: V33美元/CNY成本、Google图片输出预算毛利与十五列表格；独立计算和浏览器核验通过。
+[POS]: 当前V33语义入口；V01–V32仅作历史，20%目标与实际下界分开，试算不回写基准或权益素材。
 [PROTOCOL]: 变更时更新此头部，然后检查 CLAUDE.md
 -->
 
 # AI会员定价 · GitHub Pages 发布目录
 
-[最新版](https://dai0519.github.io/ai-membership-pricing/) · [V32日期版](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v32/会员定价决策.html) · [固定V31历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v31/会员定价决策.html) · [固定V30历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v30/会员定价决策.html) · [固定V29历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v29/会员定价决策.html) · [固定V28历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v28/会员定价决策.html) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [固定V25历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v25/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
+[最新版](https://dai0519.github.io/ai-membership-pricing/) · [V33日期版](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v33/会员定价决策.html) · [固定V32历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v32/会员定价决策.html) · [固定V31历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v31/会员定价决策.html) · [固定V30历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v30/会员定价决策.html) · [固定V29历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v29/会员定价决策.html) · [固定V28历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-28-v28/会员定价决策.html) · [固定V26](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v26/会员定价决策.html) · [固定V25历史](https://dai0519.github.io/ai-membership-pricing/版本/2026-10-21-v25/会员定价决策.html) · [版本索引](https://dai0519.github.io/ai-membership-pricing/版本/版本索引.html)
 
-当前工作版本为2026-10-28-v32，上一版为已冻结并发布的2026-10-28-v31。本轮仅删除API折扣列重复的“5.1折”“8折”“7.5折”等中文折数，保留百分比；Banana 2.1保留必要的“仅输出”说明。17项费用、核豆、张数与毛利、20%目标、模型列OneAPI渠道及V28权益素材均保持。定向核验已确认折扣去重、经济字段完全等于V31和12项销售素材SHA一致；固定版本入口及版本索引如下，线上内容以日期版为准。
+当前工作版本为2026-10-28-v33，上一版为已冻结并发布的2026-10-28-v32。Banana 2.1依用户指定采用OneAPI的GOOGLE美元渠道，100%原价，1K/2K/4K输出报价$0.0336/$0.0504/$0.113；按2026-10-28官方参考中间价1美元=6.7165元预算折算，人民币成本¥0.2256744/¥0.3385116/¥0.7589645，20%目标向上取档后核豆仍40/60/120。输入文本/参考图$1.5/百万token及输出文字/思考$7.5/百万token另计，表内毛利为图片输出预算口径，不代表完整调用利润；汇率不是公司实付汇率。其他14项、17行15列、模型列渠道、百分比单次展示和V28权益素材保持。本地独立计算与定向浏览器核验已通过，线上内容以固定日期版为准。
+
+## V32历史方案与验收
+
+V32当时工作版本为2026-10-28-v32，上一版为已冻结并发布的2026-10-28-v31。本轮仅删除API折扣列重复的“5.1折”“8折”“7.5折”等中文折数，保留百分比；Banana 2.1保留必要的“仅输出”说明。17项费用、核豆、张数与毛利、20%目标、模型列OneAPI渠道及V28权益素材均保持。定向核验已确认折扣去重、经济字段完全等于V31和12项销售素材SHA一致；固定版本入口及版本索引如下，线上内容以日期版为准。
 
 ## V31历史方案与验收
 
