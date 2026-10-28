@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-28-v30",
+  "current": "2026-10-28-v31",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -423,6 +423,20 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "0cd4749305db018e3ea5ab344a07dec6db749cc4b1785c6c08ce99e41adef408"
+      }
+    },
+    {
+      "id": "2026-10-28-v31",
+      "date": "2026-10-28",
+      "label": "模型列标注OneAPI渠道，折后成本列仅保留金额与必要输入图预算",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "a0cfb37d8789c56e224942a44d24dac2ca463d9e0c7540ce9702da57beca8033",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "349f0f42770ffa653278526e21a34a5b25c0b9071534034e98c4e676b09ccd9f"
       }
     }
   ],
