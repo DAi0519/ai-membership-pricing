@@ -1,5 +1,5 @@
 {
-  "current": "2026-10-28-v34",
+  "current": "2026-10-28-v35",
   "versions": [
     {
       "id": "2026-10-14-v01",
@@ -479,6 +479,20 @@
       "embeddedResourceCount": 2,
       "files": {
         "会员定价决策.html": "14c99d996ced21b184ce918db6972beb52ebf5c02161ee42e245a1b643455b75"
+      }
+    },
+    {
+      "id": "2026-10-28-v35",
+      "date": "2026-10-28",
+      "label": "增加全部/1K/2K/3K/4K分辨率筛选，支持3K4K组合规格与搜索/上线范围交集",
+      "state": "frozen",
+      "format": "single-html-v1",
+      "entry": "会员定价决策.html",
+      "coverage": "本版主页面、数值与动态交互；图片及可点击本版页面内嵌，仅留一份HTML",
+      "sourceHtmlSha256": "5f933c189e0be84420fb3d898c5b4a0b099f0798413a0834b26f3f52807321c1",
+      "embeddedResourceCount": 2,
+      "files": {
+        "会员定价决策.html": "506c1e08d9b0f21d7e90641fb92eb1bfbf2ef702565cccf9ae6ad76ad799128b"
       }
     }
   ],
